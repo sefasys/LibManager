@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuthScreen</class>
+ <widget class="QMainWindow" name="AuthScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>854</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AuthScreen</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(38, 38, 38);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="AuthScreen1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>427</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255,255,255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SignIn_text">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>22</pointsize>
+      <italic>false</italic>
+      <fontweight>Light</fontweight>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:black;
+font: 300 22pt &quot;Calibri&quot;;
+background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;Sign In&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="UsernameLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	background-color: rgb(214, 214, 214);
+	border-radius: 15px;
+	color: black; 
+    font-size: 16px;
+    padding-left: 6px; 
+}
+
+QLineEdit::placeholder {
+	color: rgb(141,141,141); 
+    font-style: italic; 
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Username</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Username_text">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>USERNAME:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="PasswordLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>250</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	background-color: rgb(214, 214, 214);
+	border-radius: 15px;
+	color: black; 
+    font-size: 16px;
+    padding-left: 10px; 
+}
+
+QLineEdit::placeholder {
+	color: rgb(141,141,141); 
+    font-style: italic; 
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Password_text">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>220</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: transparent;</string>
+    </property>
+    <property name="text">
+     <string>PASSWORD:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="signinButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>330</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius:15px;
+	color: black;
+	
+	font: 300 10pt &quot;Calibri&quot;;
+		
+	background-color: qlineargradient(spread:reflect, x1:0.484, y1:0.534091, x2:0.479, y2:1, stop:0 rgba(90, 191, 47, 255), stop:1 rgba(13, 134, 0, 255));
+}
+QPushButton:hover {
+	background-color: rgb(136, 202, 129);
+}</string>
+    </property>
+    <property name="text">
+     <string>Sign in</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LibManager_logo">
+    <property name="geometry">
+     <rect>
+      <x>465</x>
+      <y>70</y>
+      <width>349</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(C:/LibManager/LibManager/LBResources/LibManager_logo_revised.png);
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="welcome_text">
+    <property name="geometry">
+     <rect>
+      <x>484</x>
+      <y>170</y>
+      <width>312</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Calibri&quot;;
+color:white;
+background-color:transparent;</string>
+    </property>
+    <property name="text">
+     <string>Welcome to LibManager!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="AuthScreen1_2">
+    <property name="geometry">
+     <rect>
+      <x>427</x>
+      <y>0</y>
+      <width>428</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(C:/LibManager/LibManager/LBResources/authScreen_imageV2.png)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="signupButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>390</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius:15px;
+	color: black;
+	
+	font: 300 10pt &quot;Calibri&quot;;
+		
+	background-color: qlineargradient(spread:reflect, x1:0.484, y1:0.534091, x2:0.479, y2:1, stop:0 rgba(90, 191, 47, 255), stop:1 rgba(13, 134, 0, 255));
+}
+
+QPushButton:hover {
+	background-color: rgb(136, 202, 129);
+}</string>
+    </property>
+    <property name="text">
+     <string>Sign up</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>240</y>
+      <width>361</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>Organize, track, and optimize your library effortlessly.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>497</x>
+      <y>280</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>Create, edit, and maintain records of books.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>525</x>
+      <y>320</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>Login to get started LibManager!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>AuthScreen1_2</zorder>
+   <zorder>AuthScreen1</zorder>
+   <zorder>SignIn_text</zorder>
+   <zorder>UsernameLineEdit</zorder>
+   <zorder>Username_text</zorder>
+   <zorder>PasswordLineEdit</zorder>
+   <zorder>Password_text</zorder>
+   <zorder>signinButton</zorder>
+   <zorder>welcome_text</zorder>
+   <zorder>signupButton</zorder>
+   <zorder>LibManager_logo</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
